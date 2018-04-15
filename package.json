@@ -1,0 +1,43 @@
+{
+  "name": "budglit",
+  "version": "0.0.0",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": {
+    "name": "Emmanuel Franco",
+    "email": "efranco5788@gmail.com"
+  },
+  "dependencies": {
+    "@google/maps": "^0.4.5",
+    "body-parser": "~1.17.1",
+    "check-types": "^7.3.0",
+    "connect-mssql": "^1.5.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "^2.6.9",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.5",
+    "express-mysql-session": "^1.2.3",
+    "express-session": "^1.15.6",
+    "file-system": "^2.2.2",
+    "helmet": "^3.9.0",
+    "js-sha512": "^0.4.0",
+    "moment": "^2.22.0",
+    "mongodb": "^3.0.4",
+    "mongoose": "^5.0.11",
+    "morgan": "~1.8.1",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-rc.4",
+    "serve-favicon": "^2.4.5",
+    "string-similarity": "^1.2.0",
+    "superagent": "^3.8.2",
+    "user-agent": "^1.0.4"
+  },
+  "devDependencies": {
+    "mysql": "^2.15.0",
+    "nodemon": "^1.14.7",
+    "webpack": "^3.10.0"
+  }
+}

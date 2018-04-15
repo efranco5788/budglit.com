@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div class="temp search">
+  <h1>Testing the Temp Search</h1>
+  <form class="testingForm" action="../tempSearch" method="post">
+    Zipcode: <input type="text" name="zipcode"><br>
+    Multiple Zipcodes: <input type="text" name="surroundingZipcodes[0]"><br>
+    <input type="text" name="surroundingZipcodes[1]"><br>
+    Budget: <input type="text" name="budget_filter"><br>
+    Date: <input type="date" name="date_filter"><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<div class="search">
+  <h1>Testing the search</h1>
+  <form class="testingForm" action="../search" method="post">
+    City: <input id="cityDropdown" type="text" name="city"><br>
+    State: <input type="text" name="state"><br>
+    Date: <input type="datetime-local" id="datePicker" name="date" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}" required><br>
+    <select name="timezone" id="timezone">
+      <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein (MHT)</option>
+      <option value="-11:00">(GMT -11:00) Midway Island, Samoa (SST)</option>
+      <option value="-10:00">(GMT -10:00) Hawaii (HST)</option>
+      <option value="-09:00">(GMT -09:00) Alaska (AKST)</option>
+      <option value="-08:00">(GMT -08:00) Pacific Time (US &amp; Canada) (PST)</option>
+      <option value="-07:00">(GMT -07:00) Mountain Standard Time (MST)</option>
+      <option value="-06:00">(GMT -06:00) Central Standard Time (CST)</option>
+      <option selected="true" value="-04:00">(GMT -04:00) Eastern Standard Time (EST)</option>
+      <option value="-04:00">(GMT -04:00) Atlantic Standard Time (AST)</option>
+      <option value="+10:00">(GMT +10:00) Chamorro Standard Time (CHST)</option>
+      <option value="+12:00">(GMT +12:00) Wake Island (WAKT)</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<div class="image search">
+  <h1>Testing the search</h1>
+  <form class="testingForm" action="../image" method="get">
+    Image Name: <input type="text" name="name"><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<div class="Testing Login Authentication">
+  <h1>Testing Login</h1>
+  <form class="testingForm" action="../authentication" method="get">
+    Image Name: <input type="text" name="name"><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<script>
+let today = new Date()
+let todayString = today.toISOString()
+
+console.log(todayString)
+document.getElementById('datePicker').value = todayString
+</script>
+
+</body>
+</html>

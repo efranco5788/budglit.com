@@ -1,0 +1,39 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+#navbar-override {
+  background-color: #1F509B;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+#btn-link-override {
+  color: white;
+  padding-right: 10px;
+}
+
+@media (min-width: 576px) { 
+
+}
+
+
+@media (min-width: 768px) {
+
+  #btn-link-override {
+    padding-right: 20px;
+  }
+
+ }
+
+
+@media (min-width: 992px) { 
+
+}
+
+
+@media (min-width: 1200px) { 
+
+}

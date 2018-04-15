@@ -1,0 +1,9 @@
+body {
+  min-height: 2000px;
+  min-width: 80%;
+  padding-top: 70px;
+}
+
+#navbar-override{
+  background-color: white;
+}
